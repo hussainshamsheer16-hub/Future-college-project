@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future College | Modern Education</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Outfit', sans-serif; 
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        /* Page Load Animation */
+        .fade-in { animation: fadeIn 1.2s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 selection:bg-indigo-500 selection:text-white fade-in">
+
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 tracking-tight">
+                Future College.
+            </a>
+            
+            <div class="space-x-8 font-medium hidden md:flex items-center text-slate-600">
+                <a href="#home" class="hover:text-indigo-600 transition duration-300 relative group">
+                    Home
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="hover:text-indigo-600 transition duration-300 relative group">
+                    About
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#academics" class="hover:text-indigo-600 transition duration-300 relative group">
+                    Academics
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#faculty" class="hover:text-indigo-600 transition duration-300 relative group">
+                    Faculty
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#admissions" class="hover:text-indigo-600 transition duration-300 relative group">
+                    Admissions
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#gallery" class="hover:text-indigo-600 transition duration-300 relative group">
+                    Gallery
+                    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="bg-indigo-600 text-white px-6 py-2.5 rounded-full hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5 transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-fixed overflow-hidden">
+        <div class="absolute inset-0 bg-slate-900/60 z-0"></div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-16">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold text-sm tracking-wide transform hover:scale-105 transition duration-300 cursor-default">
+                🎯 Fall Admissions Open
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 text-white leading-tight drop-shadow-lg">
+                Lead The <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Future</span>
+            </h1>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light drop-shadow-md">
+                Empowering the next generation with cutting-edge technology, world-class faculty, and an environment built for innovation.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#admissions" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold px-8 py-4 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500/50 hover:-translate-y-1 transition duration-300">
+                    Apply Now
+                </a>
+                <a href="#about" class="bg-white/10 backdrop-blur-md text-white font-semibold px-8 py-4 rounded-2xl border border-white/30 hover:bg-white/20 transition duration-300">
+                    Explore Campus
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative -mt-16 z-20 max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6 mb-24">
+        <div class="bg-white/80 backdrop-blur-lg p-8 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition duration-500 group">
+            <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                <span class="text-2xl">👨‍🏫</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Top Faculty</h3>
+            <p class="text-slate-500">Learn from industry leaders and experienced educators dedicated to your success.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-lg p-8 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition duration-500 group">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                <span class="text-2xl">🔬</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Modern Labs</h3>
+            <p class="text-slate-500">State-of-the-art facilities equipped with the latest technology for practical learning.</p>
+        </div>
+        <div class="bg-white/80 backdrop-blur-lg p-8 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition duration-500 group">
+            <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                <span class="text-2xl">🌍</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Global Network</h3>
+            <p class="text-slate-500">Connect with an extensive alumni network worldwide for endless career opportunities.</p>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-600 to-purple-600 rounded-3xl translate-x-4 translate-y-4 opacity-30 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-500"></div>
+                <img class="relative rounded-3xl shadow-xl w-full h-[500px] object-cover" src="https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=2070&auto=format&fit=crop" alt="Campus Building">
+            </div>
+            <div>
+                <h2 class="text-indigo-600 font-bold tracking-wider uppercase mb-2">Our Heritage</h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold mb-6 text-slate-900 leading-tight">A Tradition of <br>Excellence</h3>
+                <p class="text-slate-600 mb-6 leading-relaxed text-lg">
+                    Future College was founded on the principle that education should adapt to the modern world. We combine rigorous traditional academics with bleeding-edge technology to ensure our students are ready to create the future.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center space-x-3 text-slate-700">
+                        <span class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold">✓</span>
+                        <span class="text-lg">Recognized as a Top 10 National Institution.</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-slate-700">
+                        <span class="w-8 h-8 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold">✓</span>
+                        <span class="text-lg">Over 50,000 successful alumni globally.</span>
+                    </li>
+                </ul>
+                <button class="bg-slate-900 text-white px-8 py-4 rounded-2xl hover:bg-indigo-600 transition duration-300 shadow-lg">Read Full History</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="py-24 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-indigo-400 font-bold tracking-wider uppercase mb-2">Departments</h2>
+                <h3 class="text-4xl font-extrabold">Academic Excellence</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer shadow-2xl">
+                    <div class="absolute inset-0 bg-slate-900/70 z-10 group-hover:bg-slate-900/40 transition duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center mb-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <h4 class="font-bold text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition duration-500">Computer Science</h4>
+                        <p class="text-slate-300 opacity-0 group-hover:opacity-100 transition duration-500 delay-100">Modern computer labs and advanced programming curricula.</p>
+                    </div>
+                </div>
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer shadow-2xl">
+                    <div class="absolute inset-0 bg-slate-900/70 z-10 group-hover:bg-slate-900/40 transition duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center mb-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <h4 class="font-bold text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition duration-500">Physics</h4>
+                        <p class="text-slate-300 opacity-0 group-hover:opacity-100 transition duration-500 delay-100">State-of-the-art laboratories for practical experiments.</p>
+                    </div>
+                </div>
+                <div class="group relative h-96 rounded-3xl overflow-hidden cursor-pointer shadow-2xl">
+                    <div class="absolute inset-0 bg-slate-900/70 z-10 group-hover:bg-slate-900/40 transition duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 z-20 p-8 flex flex-col justify-end">
+                        <div class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center mb-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <h4 class="font-bold text-3xl mb-2 translate-y-4 group-hover:translate-y-0 transition duration-500">Mathematics</h4>
+                        <p class="text-slate-300 opacity-0 group-hover:opacity-100 transition duration-500 delay-100">Strong conceptual learning and analytical problem solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faculty" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-indigo-600 font-bold tracking-wider uppercase mb-2">Our Experts</h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Meet Our Distinguished Faculty</h3>
+                <p class="text-slate-500 text-lg">
+                    Our staff isn't just composed of teachers; they are industry pioneers, researchers, and mentors dedicated to shaping the next generation of leaders.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&h=400&fit=crop" alt="Staff">
+                        <div class="absolute inset-0 bg-indigo-600/10 group-hover:bg-transparent transition duration-500"></div>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Dr. Arshad Khan</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Chief Principal</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">20+ years in Academic Leadership</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Sarah Jenkins</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Dean of Technology</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Former Senior Engineer at Google</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Prof. Ali Ahmad</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Director of Research</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Published 50+ Scientific Papers</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Elena Rodriguez</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Head of Creative Arts</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Award-winning Visual Designer</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Mark Thompson</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Dean of Students</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Expert in Student Psychology</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Coach James</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Athletics Director</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Olympic Gold Medalist Coach</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Dr. Maya Patel</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Innovation Strategist</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">AI & Machine Learning Specialist</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Robert Vance</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Placement Officer</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Industry Linkage Expert</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://media.istockphoto.com/id/2260841290/photo/portrait-of-an-elegant-african-businesswoman-wearing-a-blue-suit-standing-in-a-modern.webp?a=1&b=1&s=612x612&w=0&k=20&c=d8HYE5h8XOB8Anp-GsYii5At_odT-EQ5NmheXlxAEk0=" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Sophia Loren</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Head of Languages</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Master of 7 International Languages</p>
+                </div>
+
+                <div class="group text-center">
+                    <div class="relative mb-4 overflow-hidden rounded-2xl shadow-lg aspect-square">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition duration-500" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=400&h=400&fit=crop" alt="Staff">
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">David Miller</h4>
+                    <p class="text-indigo-600 font-semibold text-sm uppercase tracking-tight">Laboratory Chief</p>
+                    <p class="text-slate-400 text-xs mt-2 px-4">Robotics and Hardware Expert</p>
+                </div>
+
+            </div>
+
+            <div class="mt-20 bg-indigo-600 rounded-[3rem] p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between shadow-2xl">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-3xl font-bold mb-2">98% Faculty Excellence Rating</h4>
+                    <p class="text-indigo-100 italic">"Our staff consists of the most cited researchers in the country."</p>
+                </div>
+                <div class="flex -space-x-4">
+                    <img class="w-12 h-12 rounded-full border-2 border-indigo-600" src="https://i.pravatar.cc/100?u=1">
+                    <img class="w-12 h-12 rounded-full border-2 border-indigo-600" src="https://i.pravatar.cc/100?u=2">
+                    <img class="w-12 h-12 rounded-full border-2 border-indigo-600" src="https://i.pravatar.cc/100?u=3">
+                    <div class="w-12 h-12 rounded-full bg-white text-indigo-600 flex items-center justify-center font-bold text-xs">+150</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold mb-4 text-slate-900">Join Our Community</h2>
+                <p class="text-slate-500 text-lg">Take the first step towards a brilliant career. Applications are now open.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                    <div class="text-indigo-600 font-bold mb-4 tracking-widest uppercase text-sm">Undergraduate</div>
+                    <h3 class="text-3xl font-bold mb-4 text-slate-900">Bachelors</h3>
+                    <p class="text-slate-500 mb-8 flex-grow">4-year comprehensive degree programs across 20+ disciplines.</p>
+                    <button class="w-full bg-slate-100 text-slate-800 font-semibold py-4 rounded-2xl hover:bg-indigo-600 hover:text-white transition duration-300">Start Application</button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-600 to-purple-700 p-8 rounded-3xl shadow-xl hover:-translate-y-2 transition-all duration-300 text-white relative transform md:-translate-y-4 flex flex-col">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1.5 m-6 rounded-full shadow-md">Most Popular</div>
+                    <div class="text-indigo-200 font-bold mb-4 tracking-widest uppercase text-sm">Postgraduate</div>
+                    <h3 class="text-3xl font-bold mb-4 text-white">Masters</h3>
+                    <p class="text-indigo-100 mb-8 flex-grow">2-year specialized degrees focused on advanced research and industry leadership.</p>
+                    <button class="w-full bg-white text-indigo-700 font-bold py-4 rounded-2xl hover:bg-slate-100 transition duration-300 shadow-lg hover:shadow-xl">Start Application</button>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                    <div class="text-indigo-600 font-bold mb-4 tracking-widest uppercase text-sm">Short Courses</div>
+                    <h3 class="text-3xl font-bold mb-4 text-slate-900">Certifications</h3>
+                    <p class="text-slate-500 mb-8 flex-grow">6-month intensive bootcamps designed for rapid skill acquisition.</p>
+                    <button class="w-full bg-slate-100 text-slate-800 font-semibold py-4 rounded-2xl hover:bg-indigo-600 hover:text-white transition duration-300">View Courses</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center mb-16 text-slate-900">Campus Life Gallery</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+                <div class="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group shadow-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 z-10 flex items-end p-8">
+                        <h4 class="text-white font-bold text-2xl translate-y-4 group-hover:translate-y-0 transition duration-300">Main Campus</h4>
+                    </div>
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition duration-700" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" alt="Campus">
+                </div>
+                <div class="relative rounded-3xl overflow-hidden group shadow-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 z-10 flex items-end p-6">
+                        <h4 class="text-white font-bold text-xl translate-y-4 group-hover:translate-y-0 transition duration-300">Graduation</h4>
+                    </div>
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition duration-700" src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=2070&auto=format&fit=crop" alt="Graduation">
+                </div>
+                <div class="relative rounded-3xl overflow-hidden group shadow-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 z-10 flex items-end p-6">
+                        <h4 class="text-white font-bold text-xl translate-y-4 group-hover:translate-y-0 transition duration-300">Classrooms</h4>
+                    </div>
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition duration-700" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop" alt="Classroom">
+                </div>
+                <div class="md:col-span-2 relative rounded-3xl overflow-hidden group shadow-md">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 z-10 flex items-end p-8">
+                        <h4 class="text-white font-bold text-2xl translate-y-4 group-hover:translate-y-0 transition duration-300">Library & Study Areas</h4>
+                    </div>
+                    <img class="w-full h-full object-cover group-hover:scale-105 transition duration-700" src="https://media.istockphoto.com/id/1356576829/photo/two-students-studying-together-using-computers-in-a-library.webp?a=1&b=1&s=612x612&w=0&k=20&c=3drPH8hJD507Acj2063Vb3iUcEUkwOIC0TGpw9bcI-4=" alt="Library">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-50 relative border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-xl border border-slate-100">
+                    <h2 class="text-4xl font-extrabold mb-4 text-slate-900">Get In Touch</h2>
+                    <p class="text-slate-500 mb-8">Have questions about admissions or programs? Send us a message.</p>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">First Name</label>
+                                <input type="text" class="w-full bg-slate-50 p-4 rounded-2xl border border-slate-200 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full bg-slate-50 p-4 rounded-2xl border border-slate-200 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full bg-slate-50 p-4 rounded-2xl border border-slate-200 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                            <textarea class="w-full bg-slate-50 p-4 rounded-2xl border border-slate-200 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition resize-none" rows="4" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button class="w-full bg-indigo-600 text-white font-bold py-4 rounded-2xl hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-1 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex flex-col justify-center space-y-8">
+                    <div class="bg-white p-8 rounded-[2.5rem] shadow-lg border border-slate-100 flex flex-col space-y-6">
+                        <div class="flex items-center space-x-6">
+                            <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl text-slate-800 mb-1">Campus Address</h4>
+                                <p class="text-slate-500">123 Education Boulevard, Main City</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-px bg-slate-100"></div>
+                        <div class="flex items-center space-x-6">
+                            <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center shrink-0">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold items-center text-xl text-slate-800 mb-1">Phone & Email</h4>
+                                <p class="text-slate-500 items-center">+92 300 1234567 <br> admissions@futurecollege.edu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 pt-20 pb-10 overflow-hidden relative">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-16">
+            
+            <div class="md:col-span-2 lg:col-span-1">
+                <h2 class="text-3xl font-extrabold text-white mb-6 tracking-tight">
+                    Future<span class="text-indigo-500">College.</span>
+                </h2>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Empowering minds and shaping the future through innovative education and a commitment to global excellence.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:-translate-y-1 transition-all duration-300">
+                        <span class="text-white text-xs">FB</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:-translate-y-1 transition-all duration-300">
+                        <span class="text-white text-xs">X</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-indigo-600 hover:-translate-y-1 transition-all duration-300">
+                        <span class="text-white text-xs">LN</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:pl-10">
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a href="#about" class="hover:text-white hover:translate-x-1 inline-block transition-all">About Us</a></li>
+                    <li><a href="#academics" class="hover:text-white hover:translate-x-1 inline-block transition-all">Academics</a></li>
+                    <li><a href="#admissions" class="hover:text-white hover:translate-x-1 inline-block transition-all">Admissions</a></li>
+                    <li><a href="#faculty" class="hover:text-white hover:translate-x-1 inline-block transition-all">Our Faculty</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Support</h4>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:text-white hover:translate-x-1 inline-block transition-all">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white hover:translate-x-1 inline-block transition-all">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-white hover:translate-x-1 inline-block transition-all">Cookie Settings</a></li>
+                    <li><a href="#" class="hover:text-white hover:translate-x-1 inline-block transition-all">Student Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="text-white font-bold mb-2 uppercase tracking-widest text-xs">Stay Updated</h4>
+                <div class="relative group">
+                    <input type="email" placeholder="Email address" class="w-full bg-slate-800 border border-slate-700 rounded-2xl py-4 px-5 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition">
+                    <button class="absolute right-2 top-2 bg-indigo-600 text-white p-2.5 rounded-xl hover:bg-indigo-500 transition">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                </div>
+                <div class="w-full h-32 rounded-2xl overflow-hidden border border-slate-700 opacity-60 hover:opacity-100 transition duration-500">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5515123048!2d73.9782531!3d31.4815212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918f1f70d5a37f9%3A0x7d6f5193910c266a!2sSheikhupura%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1712540000000" 
+                        class="w-full h-full border-0 grayscale invert" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs tracking-wider">
+            <p class="mb-4 md:mb-0">© 2026 FUTURE COLLEGE. ALL RIGHTS RESERVED.</p>
+            <div class="flex space-x-6">
+                <span>PAKISTAN (+92)</span>
+                <span class="text-indigo-500 font-bold tracking-tighter">DESIGNED BY ALGORYDHM</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
